@@ -4,6 +4,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ### Upgrade Chocolatey ###
 
+choco feature enable -n allowGlobalConfirmation
+
 choco upgrade chocolatey
 
 choco install notepadplusplus googlechrome adobereader 7zip firefox vlc git python3 openssh malwarebytes ccleaner filezilla chef-client vscode libreoffice-fresh netfx-4.7.1-devpack dotnet3.5 treesizefree winscp.install awscli wireshark yarn virtualbox microsoft-windows-terminal puppet-agent audacity greenshot terraform rufus
